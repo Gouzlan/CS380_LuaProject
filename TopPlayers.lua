@@ -1,7 +1,7 @@
 #!/usr/bin/lua
 --
 -- Team #1 Lua Project: Returning Top 3 players from top lists of NBA
---  Names  : Andrew Olaveson, Joshua Rodriguez, 
+--  Names  : Andrew Olaveson, Joshua Rodriguez,
 --            Ronald Lencevicius, Christopher Kilian
 --  Due    : 05-29-2018
 --  Course : cs40801-sp18
@@ -16,7 +16,7 @@ FORMAT = '%2d: %-20s %.f'
 
 
 -- Input File callback Function
-function Entry(b) 
+function Entry(b)
     statsData[index] = b
     index = index + 1
 end
@@ -50,21 +50,43 @@ function getTop3Scores(category)
     return  category[1].score, category[2].score, category[3].score
 end
 
+-- Sort the table by the keys
+function pairsByKeys(dataTable)
+  local data = {}
+  for number in pairs(dataTable) do
+    table.insert(data, number)
+  end
+  table.sort(data)
+  local i = 0      -- iterator variable
+  local iter = function()   -- iterator function
+    i = i + 1
+    if data[i] == nil then
+      return nil
+    else
+      return data[i], dataTable[data[i]]
+    end
+  end
+  return iter
+end
+
+-- Take the data from the file and convert it into a table that we can print pretty
+function toKeyValueTable(dataTable)
+  local data = {}
+  for key in pairs(dataTable) do
+      local category = dataTable[key]
+      local top3 = {plyr = {}, scor = {}}
+      top3.plyr[1], top3.plyr[2], top3.plyr[3] = getTop3Players(category)
+      top3.scor[1], top3.scor[2], top3.scor[3] = getTop3Scores(category)
+      data[category.category] = top3
+  end
+  return data
+end
 
 -- Main Execution --
 dofile("NBA_Stats.txt")
 
 -- Each category in statsData returns the top3 players and scores and prints it.
-top3 = {plyr = {}, scor = {}}
-for k,v in pairs(statsData) do
-    local category = statsData[k]
-    top3.plyr[1], top3.plyr[2], top3.plyr[3] = getTop3Players(category)
-    top3.scor[1], top3.scor[2], top3.scor[3] = getTop3Scores(category)
-    print(category.category .. ':')
-    printTop3(top3)
+for key, value in pairsByKeys(toKeyValueTable(statsData)) do
+  print(key .. ':')
+  printTop3(value)
 end
-
-
-
-
-
