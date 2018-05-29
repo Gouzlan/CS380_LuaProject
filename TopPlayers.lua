@@ -21,6 +21,8 @@
 --      http://lua-users.org/wiki/BuildingLuaInWindowsForNewbies
 --   
 -- Code: https://github.com/Gouzlan/CS380_LuaProject.git
+-- To RUN: issue the following terminal command:
+--      $ lua TopPlayers.lua
 --
 
 statsData = {}            -- Holds all data read in from textfile
