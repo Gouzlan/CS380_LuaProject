@@ -1,0 +1,95 @@
+Assists:
+ 1: Magic Johnson        2346
+ 2: John Stockton        1839
+ 3: LeBron James         1624
+
+Blocks:
+ 1: Tim Duncan           568
+ 2: Kareem Abdul-Jabbar  476
+ 3: Hakeem Olajuwon      472
+
+Defensive Rebounds:
+ 1: Tim Duncan           2081
+ 2: LeBron James         1698
+ 3: Shaquille O'Neal     1642
+
+Field Goal %:
+ 1: Shaquille O'Neal     56
+ 2: Kevin McHale         56
+ 3: James Worthy         54
+
+Field Goals Attempted:
+ 1: LeBron James         4834
+ 2: Kobe Bryant          4499
+ 3: Michael Jordan       4497
+
+Field Goals Made:
+ 1: LeBron James         2368
+ 2: Kareem Abdul-Jabbar  2356
+ 3: Michael Jordan       2188
+
+Free Throw %:
+ 1: Dirk Nowitzki        89
+ 2: Magic Johnson        84
+ 3: Michael Jordan       83
+
+Free Throws Attempted:
+ 1: Shaquille O'Neal     2317
+ 2: LeBron James         2127
+ 3: Michael Jordan       1766
+
+Free Throws Made:
+ 1: LeBron James         1577
+ 2: Michael Jordan       1463
+ 3: Kobe Bryant          1320
+
+Games Played:
+ 1: Derek Fisher         259
+ 2: Tim Duncan           251
+ 3: Robert Horry         244
+
+Offensive Rebounds:
+ 1: Shaquille O'Neal     866
+ 2: Tim Duncan           778
+ 3: Dennis Rodman        626
+
+Personal Fouls:
+ 1: Kareem Abdul-Jabbar  797
+ 2: Shaquille O'Neal     769
+ 3: Robert Horry         717
+
+Points:
+ 1: LeBron James         6668
+ 2: Michael Jordan       5987
+ 3: Kareem Abdul-Jabbar  5762
+
+Rebounds:
+ 1: Bill Russell         4104
+ 2: Wilt Chamberlain     3913
+ 3: Tim Duncan           2859
+
+Steals:
+ 1: LeBron James         410
+ 2: Scottie Pippen       395
+ 3: Michael Jordan       376
+
+Three Point %:
+ 1: Kenny Smith          45
+ 2: Jeff Hornacek        43
+ 3: Kawhi Leonard        43
+
+Three Pointers Attempted:
+ 1: LeBron James         1077
+ 2: Ray Allen            959
+ 3: Manu Ginobili        905
+
+Three Pointers Made:
+ 1: Ray Allen            385
+ 2: LeBron James         355
+ 3: Stephen Curry        342
+
+Turnovers:
+ 1: LeBron James         829
+ 2: Magic Johnson        696
+ 3: Shaquille O'Neal     649
+

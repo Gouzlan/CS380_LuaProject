@@ -8,6 +8,19 @@
 --
 --  Description: Takes in a top score chart of all time for the NBA, including
 --    different categories, and outputs the top 3 of each category.
+-- Lua interpreter: https://www.lua.org/download.html
+-- Download and install lua 
+--
+-- Installing Lua For:
+--   * LINUX: Issue the following command in the terminal:
+--     $ curl -R -O http://www.lua.org/ftp/lua-5.3.4.tar.gz
+--     $ tar zxf lua-5.3.4.tar.gz
+--     $ cd lua-5.3.4
+--     $ make linux test
+--   * Windows: Follow the online guide linked below
+--      http://lua-users.org/wiki/BuildingLuaInWindowsForNewbies
+--   
+-- Code: https://github.com/Gouzlan/CS380_LuaProject.git
 --
 
 statsData = {}            -- Holds all data read in from textfile
@@ -83,7 +96,7 @@ function toKeyValueTable(dataTable)
 end
 
 -- Main Execution --
-dofile("NBA_Stats.txt")
+dofile("NBA_Stats_input.txt")
 
 -- Each category in statsData returns the top3 players and scores and prints it.
 for key, value in pairsByKeys(toKeyValueTable(statsData)) do
